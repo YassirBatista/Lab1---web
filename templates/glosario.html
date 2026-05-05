@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glosario – Diseño Web Responsive</title>
+    <link rel="stylesheet" href="../assets/style/base.css">
+    <link rel="stylesheet" href="../assets/style/styleGlosario.css">
+</head>
+<body>
+
+    <header>
+        <nav class="nav">
+            <span class="nav-titulo">Glosario</span>
+            <ul class="nav-lista">
+                <li><a href="index.html"> Inicio</a></li>
+                <li><a href="cv.html"> Hoja de Vida</a></li>
+                <li><a href="investigacion.html">󰥗 Investigación</a></li>
+                <li><a href="glosario.html"> Glosario</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenido">
+
+        <section class="intro">
+            <h1>Glosario – Diseño Web Responsive</h1>
+            <p>Conceptos básicos para diseñar páginas web que se adapten a cualquier tipo de pantalla.</p>
+        </section>
+
+        <section id="glosario">
+            <article class="termino">
+                <div class="termino-encabezado">
+                    <span class="termino-icono">'</span>
+                    <h2>Media Queries</h2>
+                </div>
+                    <p>Las Media Queries son una característica de CSS que permite aplicar estilos condicionales según las características del dispositivo o la pantalla, como su ancho, alto, resolución u orientación. Se escriben con la regla <code>@media</code> y son la base del diseño responsive, ya que permiten adaptar el layout y la tipografía a móviles, tablets y escritorios sin necesidad de múltiples archivos CSS.</p>
+                <div class="termino-imagen">
+                    <img src="../assets/images/media.png" alt="Ejemplo Media Queries">
+                </div>
+            </article>
+
+            <article class="termino">
+                <div class="termino-encabezado">
+                    <span class="termino-icono">󱗝</span>
+                    <h2>Flexbox</h2>
+                </div>
+                    <p>El Módulo de Caja Flexible (Flexbox) es un sistema de diseño unidimensional de CSS que organiza elementos en una sola fila o columna. Facilita la distribución del espacio, la alineación y el reordenamiento de elementos dentro de un contenedor, sin importar su tamaño. Es especialmente útil para construir barras de navegación, tarjetas y componentes que deben adaptarse de forma fluida al espacio disponible.</p>
+                <div class="termino-imagen">
+                    <img src="../assets/images/flexbox.png" alt="Ejemplo Flexbox">
+                </div>
+            </article>
+
+            <article class="termino">
+                <div class="termino-encabezado">
+                    <span class="termino-icono">󰓪</span>
+                    <h2>Viewport</h2>
+                </div>
+                    <p>El viewport representa el área visible de una página web dentro del navegador, es decir, la porción de contenido que el usuario puede ver sin hacer scroll. En dispositivos móviles, su tamaño varía considerablemente respecto al escritorio, por lo que la etiqueta <code>&lt;meta name="viewport"&gt;</code> es esencial para indicarle al navegador cómo escalar y ajustar el contenido según el ancho real del dispositivo.</p>
+                <div class="termino-imagen">
+                    <img src="../assets/images/viewport.svg" alt="Ejemplo Viewport">
+                </div>
+            </article>
+
+            <article class="termino">
+                <div class="termino-encabezado">
+                    <span class="termino-icono"></span>
+                    <h2>Mobile First</h2>
+                </div>
+                    <p>Mobile First es una metodología de diseño web que prioriza la versión móvil como punto de partida, y luego escala el diseño hacia pantallas más grandes mediante Media Queries. Este enfoque mejora el rendimiento en dispositivos con recursos limitados, obliga a simplificar la interfaz a lo esencial y está alineado con las buenas prácticas actuales de SEO, ya que los motores de búsqueda indexan primero la versión móvil de los sitios.</p>
+                <div class="termino-imagen">
+                    <img src="../assets/images/mobile.webp" alt="Ejemplo Mobile First">
+                </div>
+            </article>
+
+            <article class="termino">
+                <div class="termino-encabezado">
+                    <span class="termino-icono">󰝘</span>
+                    <h2>CSS Grid Layout</h2>
+                </div>
+                    <p>A diferencia de Flexbox, CSS Grid es un sistema de diseño bidimensional que permite controlar simultáneamente filas y columnas dentro de un contenedor. Es ideal para construir estructuras de página completas, como layouts con cabecera, barra lateral y área de contenido. Con propiedades como <code>grid-template-columns</code> y <code>grid-template-rows</code>, se pueden crear diseños complejos y responsivos con muy pocas líneas de código.</p>
+                <div class="termino-imagen">
+                    <img src="../assets/images/css.webp" alt="Ejemplo CSS Grid">
+                </div>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Laboratorio 1 - Programación Web</p>
+    </footer>
+
+</body>
+</html>
+

@@ -1,0 +1,63 @@
+@font-face {
+    font-family: "FiraCode Nerd Font";
+    src: url("../fonts/FiraCodeNerdFont-Regular.ttf");
+}
+
+:root {
+    --verde-oscuro: #1F3D2B;
+    --verde-medio: #2D6A4F;
+    --verde-claro: #B7E4C7;
+    --blanco-suave: #F8F9FA;
+    --gris: #CED4DA;
+    --texto: #1F3D2B;
+    --borde: #CED4DA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "FiraCode Nerd Font", monospace;
+    background: #fff;
+    color: var(--texto);
+    line-height: 1.8;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 10%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-titulo {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.nav-lista {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-lista a {
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+    border-top: 1px solid var(--borde);
+    color: var(--gris);
+    font-size: 0.9rem;
+}

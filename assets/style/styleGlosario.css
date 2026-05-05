@@ -1,0 +1,131 @@
+:root {
+    --fondo-sitio: #f8f9fa;      
+    --fondo-tarjeta: #ffffff;    
+    --texto-cuerpo: #444b6a;     
+    --linea-sutil: #d5d8e6;      
+    
+    --hypr-pink: #f7768e;
+    --hypr-purple: #bb9af7;
+    --hypr-teal: #2ac3de;
+}
+
+body {
+    background-color: var(--fondo-sitio);
+    color: var(--texto-cuerpo);
+}
+
+.nav {
+    background: #16161e; 
+    border-bottom: 1px solid #bb9af733; 
+}
+
+.nav-titulo {
+    color: #f7768e;
+}
+
+.nav-lista a {
+    color: #a9b1d6; 
+}
+
+.nav-lista a:hover {
+    color: #bb9af7;
+    text-shadow: 0 0 8px #bb9af766;
+}
+
+.contenido {
+    max-width: 850px;
+    margin: 60px auto;
+}
+
+.intro {
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+}
+
+.intro h1 {
+    font-size: 2.6rem;
+    color: #24283b;
+    margin-bottom: 10px;
+}
+
+.termino {
+    padding: 30px;
+    margin-bottom: 20px;
+    background: var(--fondo-tarjeta);
+    border-radius: 8px;
+    border: 1px solid var(--linea-sutil);
+    transition: all 0.3s ease;
+}
+
+.termino:hover {
+    border-color: var(--hypr-purple);
+    transform: translateX(5px); 
+    box-shadow: 4px 4px 0px var(--hypr-purple); 
+}
+
+.termino-encabezado {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.termino-icono {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    border-radius: 8px;
+    background: #f0f1f6;
+    color: var(--hypr-teal);
+    transition: 0.3s;
+}
+
+.termino:hover .termino-icono {
+    background: var(--hypr-pink);
+    color: white;
+}
+
+.termino-encabezado h2 {
+    font-size: 1.5rem;
+    color: #24283b;
+    margin: 0;
+}
+
+.termino p {
+    padding-left: 57px;
+    color: var(--texto-cuerpo);
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.termino code {
+    background: #f0f1f6;
+    color: var(--hypr-pink);
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+
+.termino-imagen {
+    padding-left: 57px;
+    margin-top: 15px;
+}
+
+.termino-imagen img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    border: 1px solid var(--linea-sutil);
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    border-top: 1px solid var(--linea-sutil);
+    color: #9aa5ce;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+}
